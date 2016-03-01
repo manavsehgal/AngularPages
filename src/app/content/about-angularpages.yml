@@ -1,0 +1,23 @@
+title: About AngularPages
+
+summary: Use AngularPages to rapidly create full-stack Angular 2 apps
+
+image: 'assets/icon/ms-icon-310x310.png'
+
+start: >
+  AngularPages enables you to rapidly create full-stack Angular 2 apps.
+  Using Webpack for build automation, you can process YAML, JSON,
+  HTML, Jade, Sass, and CSS for designing dynamic or static pages for your app.
+
+mid: >
+  The AngularPages project is available on GitHub with MIT license and
+  open source. Documentation is available on this website with relevant demos.
+
+end: >
+  Best way to get started with AngularPages is to fork or clone the repo. Copy
+  components that you want to use and rename, refactor these. Edit routes to
+  point to your new component copies. Delete unused components. Same applies
+  to content static pages and mocks.
+
+url: https://github.com/manavsehgal/AngularPages
+link: AngularPages on GitHub

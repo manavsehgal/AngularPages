@@ -1,0 +1,78 @@
+@import '../theme';
+
+.story {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+
+  .title {
+    color: $title;
+    font-size: 2em;
+  }
+
+  .summary {
+    color: $summary;
+    font-size: 1.7em;
+  }
+
+  .image {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+  }
+
+  .start {
+    color: $start;
+    font-size: 1.5em;
+  }
+
+  .mid {
+    color: $mid;
+    font-size: 1.3em;
+  }
+
+  .end {
+    color: $end;
+    font-size: 1.1em;
+  }
+
+  .link {
+    padding: 7px;
+    margin: 5px;
+    background-color: $title;
+    box-shadow: 5px 5px 5px #888888;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+    display: flex;
+    justify-content: center;
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+  }
+
+  .link:hover {
+    box-shadow: 2px 2px 2px #888888;
+  }
+}
+
+/* Medium screens */
+@media all and (max-width: 600px) {
+  .story > .link > a {
+    font-size: 1em;
+  }
+
+  .story > .image > img {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+/* Large screens */
+@media all and (max-width: 850px) {
+  .story > .image > img {
+    width: 50%;
+    height: 50%;
+  }
+}

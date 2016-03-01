@@ -1,0 +1,20 @@
+title: Static Pages
+
+summary: Using AngularPages you can manage static pages as simple YAML markup
+
+start: >
+  Single Story component links static content using Story Mock. Structure your
+  static content using simple YAML markup.
+
+mid: >
+  Custom rendering logic for each page based on YAML structure and Story
+  component template definition.
+
+end: >
+  No need to handle routes to each of the static pages as these are auto
+  populated using Story component. Next we are exploring Markdown and Jade 
+  support for creating simple components with templates written in Markdown
+  and Jade.
+
+url: http://www.yaml.org/start.html
+link: Simple YAML syntax

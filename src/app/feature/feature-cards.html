@@ -1,0 +1,7 @@
+<ul class="feature-container">
+  <li *ngFor="#feature of features" class="card"
+  (click)="showStory(feature)">
+    <p *ngIf="!feature.image">{{feature.title}}</p>
+    <img *ngIf="feature.image" [src]="feature.image">
+  </li>
+</ul>

@@ -1,0 +1,14 @@
+title: Adaptive Design
+
+summary: AngularPages encourages multi-screen Adaptive Design for your apps
+
+start: >
+  Flexbox layout adapts app UI based on target screen size.
+
+mid: >
+  Custom rendering logic for each page based on YAML structure and Story
+  component template definition.
+
+end: >
+  Media queries at component level enable flexible management of responsive
+  design for each component.

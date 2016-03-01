@@ -1,0 +1,87 @@
+@import '../theme';
+
+.release-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+
+  .item:nth-child(odd) {
+    background: $release-item-odd;
+  }
+
+  .item:nth-child(even) {
+    background: $release-item-even;
+  }
+
+  .item {
+    padding: 5px;
+    margin-top: 10px;
+
+    line-height: 20px;
+    color: $release-item-text;
+    font-size: 1em;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+
+    .content {
+      flex: 1 93%;
+      order: 2;
+      margin-left: 10px;
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-start;
+
+      .title {
+        line-height: 20px;
+        color: $release-item-text;
+        font-size: 1.2em;
+        order: 1;
+        margin-bottom: 5px;
+      }
+
+      .detail {
+        line-height: 20px;
+        color: darken($release-item-text, 10%);
+        font-size: 1em;
+        order: 2;
+      }
+    }
+
+    .time {
+      line-height: 20px;
+      font-size: 1em;
+      flex: 1 7%;
+      order: 1;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      margin: 5px;
+      border-right-style: dashed;
+      border-right-width: thin;
+      border-color: lighten($release-item-even, 20%);
+
+      .day {
+        font-size: 1.8em;
+        color: $release-item-text;
+      }
+
+      .month {
+        font-size: 1.1em;
+        color: darken($release-item-text, 10%);
+      }
+
+      .year {
+        font-size: 0.8em;
+        color: darken($release-item-text, 20%);
+      }
+    }
+
+  }
+
+}

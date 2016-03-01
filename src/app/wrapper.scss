@@ -1,0 +1,69 @@
+@import 'theme';
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.header {
+  background: $header;
+}
+
+.footer {
+  background: $footer;
+  color: $footer-text;
+}
+
+.main {
+  background: $main;
+}
+
+.aside-left {
+  background: $aside-left;
+  line-height: 60px;
+  font-weight: bold;
+  font-size: 2.7em;
+  text-align: left;
+  width: 200px;
+}
+
+.aside-right {
+  background: $aside-right;
+  font-size: 1.5em;
+  text-align: left;
+  width: 200px;
+}
+
+/* We tell all items to be 100% width */
+.header, .main, .nav, .aside, .footer {
+  padding: 0.5em;
+  flex: 1 100%;
+}
+
+.footer {
+  a {
+    text-decoration: none;
+    color: $footer-text;
+  }
+}
+
+/* We rely on source order for mobile-first approach */
+
+/* Medium screens */
+@media all and (min-width: 600px) {
+  /* We tell both sidebars to share a row */
+  .aside { flex: 1 auto; }
+}
+
+/* Large screens */
+@media all and (min-width: 800px) {
+  /* We invert order of first sidebar and main
+   * And tell the main element to take twice as much width as the other two sidebars
+   */
+  .main { flex: 6 0px; }
+
+  .aside-left   { order: 1; }
+  .main         { order: 2; }
+  .aside-right  { order: 3; }
+  .footer       { order: 4; }
+}

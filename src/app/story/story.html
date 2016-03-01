@@ -1,0 +1,13 @@
+<div class="story">
+  <h1 class="title">{{story.content.title}}</h1>
+  <h3 class="summary">{{story.content.summary}}</h3>
+  <div *ngIf="story.expectImage" class="image">
+    <img [src]="story.content.image">
+  </div>
+  <p class="start">{{story.content.start}}</p>
+  <p class="mid">{{story.content.mid}}</p>
+  <div *ngIf="story.expectLink" class="link">
+    <a href="{{story.content.url}}">{{story.content.link}}</a>
+  </div>
+  <p class="end">{{story.content.end}}</p>
+</div>

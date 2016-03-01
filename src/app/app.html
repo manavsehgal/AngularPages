@@ -1,0 +1,46 @@
+<div class="wrapper">
+  <header class="header">
+    <nav>
+      <ul class="navigation">
+        <li class="brand">
+          {{name}}
+        </li>
+        <li router-active="active">
+          <a [routerLink]=" ['Home'] ">Home</a>
+        </li>
+        <li router-active="active">
+          <a [routerLink]=" ['Releases'] ">Releases</a>
+        </li>
+        <li router-active="active">
+          <a [routerLink]=" ['FireStart'] ">Firebase</a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <article class="main">
+    <router-outlet></router-outlet>
+  </article>
+
+  <aside class="aside aside-left">
+    Rapidly create and manage Angular 2 apps. Use Firebase, deploy on GitHub Pages.
+  </aside>
+
+  <aside class="aside aside-right">
+    <p>
+      Features include automated build using Webpack.
+      Reusable Angular 2 components, pipes, directives.
+      Configurable themes at component level using Sass.
+    </p>
+    <p>
+      Generate static hosting ready apps.
+      Easily connect to database as a service like Firebase.
+      Host on GitHub Pages with ease.
+    </p>
+  </aside>
+
+  <footer class="footer">
+    Rapidly create and manage Angular 2 apps. By <a [href]="url">@AngularPages</a>
+  </footer>
+</div>

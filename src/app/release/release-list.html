@@ -1,0 +1,15 @@
+<div class="release-list">
+  <div *ngFor="#release of releases"
+    class="item">
+    <div class="time">
+      <div class="day">{{release.timestamp | releaseSplit:"day"}}</div>
+      <div class="month">{{release.timestamp | releaseSplit:"month"}}</div>
+      <div class="year">{{release.timestamp | releaseSplit:"year"}}</div>
+    </div>
+    <div class="content">
+      <div class="title">{{release.title}}</div>
+      <div class="detail">{{release.detail}}</div>
+      <img *ngIf="release.image" [src]="release.image">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+// CSS Color Reference: http://www.w3schools.com/cssref/css_colornames.asp
+
+// app
+$font-stack:    Helvetica, sans-serif;
+
+// navigation
+$nav:         lightcoral;
+
+$nav-hover:   darken($nav, 2%);
+$nav-active:  darken($nav, 5%);
+
+$nav-text:    white;
+
+// wrapper
+$wrapper:     goldenrod;
+
+$main:        white;
+$header:      lighten($wrapper, 40%);
+
+$aside-left:  lighten($wrapper, 40%);
+$aside-right: lighten($wrapper, 30%);
+
+$footer:      darken($wrapper, 10%);
+$footer-text: white;
+
+// feature cards
+$feature-card-even: lightseagreen;
+
+$feature-card-odd:  lighten($feature-card-even, 10%);
+$feature-card-text: white;
+
+// release list
+$release-item-even: steelblue;
+
+$release-item-odd:  lighten($release-item-even, 10%);
+$release-item-text: white;
+
+// story
+
+$summary: darkgray;
+$title: steelblue;
+$start: darken($summary, 20%);
+$mid: darken($summary, 20%);
+$end: darken($summary, 20%);

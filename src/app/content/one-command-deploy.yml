@@ -1,0 +1,18 @@
+title: One-Command Deploy
+
+summary: AngularPages can deploy to Firebase hosting using one command
+
+start: >
+  You need to first install the Firebase CLI and complete the one-off
+  firebase init which creates the firebase.json config for your deployment.
+
+mid: >
+  You can then use firebase deploy command to do one-click deployment of
+  your app written in AngularPages.
+
+end: >
+  One-command deploy can be used in conjunction with one-command build using
+  Webpack and package script part of AngularPages.
+
+url: https://www.firebase.com/docs/hosting/command-line-tool.html
+link: Firebase Command Line Interface (CLI) Tool

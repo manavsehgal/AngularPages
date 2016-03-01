@@ -1,0 +1,53 @@
+@import '../theme';
+
+.feature-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+  .card {
+    padding: 5px;
+    width: 200px;
+    height: 180px;
+    margin-top: 10px;
+
+    line-height: 40px;
+    color: $feature-card-text;
+    font-weight: bold;
+    font-size: 1.7em;
+    text-align: center;
+
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+
+  .card:nth-child(odd) {
+    background: $feature-card-odd;
+  }
+
+  .card:nth-child(even) {
+    background: $feature-card-even;
+  }
+
+  .card:nth-child(odd):hover {
+    background: darken($feature-card-odd, 20%);
+  }
+
+  .card:nth-child(even):hover {
+    background: darken($feature-card-even, 20%);
+  }
+
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .feature-container > .card {
+    width: 350px;
+    font-size: 2.2em;
+  }
+}
